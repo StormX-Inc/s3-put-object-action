@@ -20,10 +20,10 @@ jobs:
    - uses: actions/checkout@master
    
    - name: Upload file-name.zip to S3 bucket
-   uses: StormX-Inc/s3-put-object-action@master
-   env:
-     FILE: ./file-name.zip
-     KEY: project-name/file-name.zip
+     uses: StormX-Inc/s3-put-object-action@master
+     env:
+       FILE: ./file-name.zip
+       KEY: project-name/file-name.zip
 ```
 
 
@@ -31,7 +31,7 @@ jobs:
 
 | Key | Value | Type | Required |
 | ------------- | ------------- | ------------- | ------------- |
-| `AWS_S3_BUCKET` | The name of the bucket you're copying to. For example, `stormx-deployment-development`. | `env` | **Yes** 
+| `AWS_S3_BUCKET` | The name of the bucket you're copying to. For example. | `env` | **Yes** 
 | `FILE` | The local file you wish to upload to S3. For example, `./file-name.zip`. | `env` | **Yes** |
 | `KEY` | The key param for the S3 put-object command. For example, `project-name/file-name.zip`. | `env` | **Yes** |
 
