@@ -31,7 +31,7 @@ jobs:
 
 | Key | Value | Type | Required |
 | ------------- | ------------- | ------------- | ------------- |
-| `AWS_S3_BUCKET` | The name of the bucket you're copying to. For example. | `env` | **Yes** 
+| `AWS_S3_BUCKET` | The name of the bucket you're copying to. | `env` | **Yes** 
 | `FILE` | The local file you wish to upload to S3. For example, `./file-name.zip`. | `env` | **Yes** |
 | `KEY` | The key param for the S3 put-object command. For example, `project-name/file-name.zip`. | `env` | **Yes** |
 
